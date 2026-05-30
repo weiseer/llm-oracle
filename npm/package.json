@@ -1,6 +1,7 @@
 {
   "name": "@weiseer/llm-oracle-mcp",
   "version": "0.1.0",
+  "mcpName": "io.github.weiseer/llm-oracle",
   "description": "MCP server for LLM provider availability and pricing — catalog of 10+ models across Anthropic, OpenAI, Google, DeepSeek, Mistral with cited sources. Self-contained (bundled catalog) with optional fresh-data fetch.",
   "type": "module",
   "bin": {
