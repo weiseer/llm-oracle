@@ -1,0 +1,34 @@
+{
+  "$schema": "https://raw.githubusercontent.com/modelcontextprotocol/registry/main/docs/server-schema.json",
+  "name": "io.github.weiseer/llm-oracle",
+  "description": "Continuously-updated catalog of LLM provider availability and pricing. Tools: list_models, get_model, find_cheapest, compare_models, check_availability. Self-contained (bundled catalog) with optional fresh-data fetch from oracle.weiseer.com.",
+  "repository": {
+    "url": "https://github.com/weiseer/llm-oracle",
+    "source": "github"
+  },
+  "version_detail": {
+    "version": "0.1.0",
+    "release_date": "2026-05-30T03:10:00Z",
+    "is_latest": true
+  },
+  "packages": [
+    {
+      "registry_name": "npm",
+      "name": "@weiseer/llm-oracle-mcp",
+      "version": "0.1.0",
+      "package_arguments": [],
+      "environment_variables": [
+        {
+          "name": "LLM_ORACLE_URL",
+          "description": "override the remote catalog URL (default: https://oracle.weiseer.com/catalog.json)",
+          "is_required": false
+        },
+        {
+          "name": "LLM_ORACLE_LOCAL_ONLY",
+          "description": "set to any value to skip remote fetch and use bundled catalog only",
+          "is_required": false
+        }
+      ]
+    }
+  ]
+}

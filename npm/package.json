@@ -1,0 +1,44 @@
+{
+  "name": "@weiseer/llm-oracle-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for LLM provider availability and pricing — catalog of 10+ models across Anthropic, OpenAI, Google, DeepSeek, Mistral with cited sources. Self-contained (bundled catalog) with optional fresh-data fetch.",
+  "type": "module",
+  "bin": {
+    "llm-oracle-mcp": "./index.js"
+  },
+  "main": "./index.js",
+  "files": [
+    "index.js",
+    "catalog.json",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "node index.js",
+    "refresh": "node scripts/refresh-catalog.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "llm",
+    "pricing",
+    "oracle",
+    "ai-agent",
+    "weiseer"
+  ],
+  "author": "weiseer <wei@weiseer.com>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weiseer/llm-oracle.git"
+  },
+  "homepage": "https://github.com/weiseer/llm-oracle#readme",
+  "bugs": {
+    "url": "https://github.com/weiseer/llm-oracle/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0"
+  }
+}
